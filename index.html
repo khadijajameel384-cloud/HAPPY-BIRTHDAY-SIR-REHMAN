@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 id="count">3</h1>
+<p class="typing">Loading Surprise </p>
+
+<script>
+let c=3;
+let el=document.getElementById("count");
+
+let t=setInterval(()=>{
+    c--;
+    el.innerText=c;
+
+    if(c==0){
+        clearInterval(t);
+        window.location.href="page2.html";
+    }
+},1000);
+</script>
+
+</body>
+</html>

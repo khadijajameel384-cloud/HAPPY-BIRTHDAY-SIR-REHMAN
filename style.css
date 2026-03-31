@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    background: radial-gradient(circle,#0f0c29,#302b63,#000);
+    color: white;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 80px;
+    font-size: 60px;
+    text-shadow: 0 0 20px pink, 0 0 40px purple;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(45deg,pink,orange);
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.typing {
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(40,end) forwards;
+}
+
+@keyframes typing {
+    to { width: 100%; }
+}
+
+.firework {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: boom 1s ease-out forwards;
+}
+
+@keyframes boom {
+    to {
+        transform: scale(20);
+        opacity: 0;
+    }
+}
